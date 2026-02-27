@@ -1,0 +1,1 @@
+export const API_SEED = "774497d0901b6a3108"
