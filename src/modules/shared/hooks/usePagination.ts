@@ -12,7 +12,7 @@ export  function usePagination({limit, totalItems}:Args) {
   useEffect(() => {
     if(totalItems > 10){
       setTimeout(()=>{
-        setTotalPages(totalItems / limit)
+        setTotalPages(Math.ceil(totalItems / limit));
       },1)
     }else{
       setTimeout(()=>{
