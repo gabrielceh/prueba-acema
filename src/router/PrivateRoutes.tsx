@@ -8,7 +8,7 @@ export function PrivateRoutes() {
 
   if(!user){
     deleteUser()
-    return <Navigate to={ROUTES.auth.login}/>
+    return <Navigate to={`/${ROUTES.auth.login}`} />;
   }
 
   return (

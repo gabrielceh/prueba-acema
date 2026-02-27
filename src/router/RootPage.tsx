@@ -11,5 +11,5 @@ export default function RootPage() {
     return <Navigate to={ROUTES.auth.login}/>
   }
 
-  return <Navigate to={ROUTES.home.users} />
+  return <Navigate to={`${ROUTES.home.root}/${ROUTES.home.users}`} />;
 }
